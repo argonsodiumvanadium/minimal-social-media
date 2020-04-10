@@ -5,5 +5,5 @@ Okay why am I puting my social media in public which is infact horrid the code i
 The reason I am putting this social media in public is for reference of how to :- <br>
 - Transfer photos over a socket connection 
 - keep a python websocket alive for real time chatting **Without the pings and pongs**
-- and the very basic JSON manipulation
+- and the very basic JSON manipulation<br><br>
 now I thought at long last my goal will be complete but it was not as I still feel the lack of adequate to make the efficient product mark had made so ... yes this is gonna take some time and practice
