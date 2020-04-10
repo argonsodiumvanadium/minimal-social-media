@@ -5,5 +5,7 @@ Okay why am I puting my social media in public which is infact horrid the code i
 The reason I am putting this social media in public is for reference of how to :- <br>
 - Transfer photos over a socket connection 
 - keep a python websocket alive for real time chatting **Without the pings and pongs**
-- and the very basic JSON manipulation<br><br>
+- and the very basic JSON manipulation<br>
+And when you open the website up no posts will be seen that is due to the fact that I have ommited that part from the code solely because that part of the code is one of the most integral and hard and I want to work on it myself
+<br>
 now I thought at long last my goal will be complete but it was not as I still feel the lack of adequate to make the efficient product mark had made so ... yes this is gonna take some time and practice
