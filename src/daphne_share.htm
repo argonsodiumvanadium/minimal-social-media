@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<head>
+ 	<link rel="stylesheet" href="home_base.css">
+ 	<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Oxanium&display=swap" rel="stylesheet">
+
+	
+	<title>Daphne</title>
+</head>
+<body>
+	<div class="leftnav">
+		<a href="daphne_home.html"><button class="head">Daphne</button></a>
+		<p class="active">home</p>
+		<button class="near">Messages</button>
+		<button>Find People</button><br>
+		<button>Groups</button><br>
+		<button>Events</button><br>
+		<button>Share</button><br>
+		<button>You</button>
+		<button class="spl">Settings</button>
+	</div>
+	<div class="topnav">
+		<button><b>GO</b></button>
+		<input type="text" id="search query" placeholder="search">
+	</div>
+	<div class="canvas" id="canvas">
+	</div>
+		<script type="text/javascript">
+		var post,elem,lButton,mButton,nButton;
+		const canvas = document.getElementById('canvas')
+
+		setButtonListener = (obj) => {
+			obj.style.color = 'white';
+			var front = obj.style.color;
+			var back = obj.style.background;
+
+
+			obj.onmouseenter = function() {
+				obj.style.color = back;
+				obj.style.background = ""+front;
+			}
+
+			obj.onmouseleave = function() {
+				obj.style.color = front;
+				obj.style.background = back;
+			}
+			obj.onclick = function() {
+				t = back;
+				back = front;
+				front = t;				
+			}
+		}
+
+		setOnClick = obj => {
+			obj.onclick = function function_name(argument) {
+				obj.style.borderBottomColor = 'black';
+			}
+		}
+
+
+		render = () => {
+			/*for (var i = 0; i < 10; i++) {
+				post = document.createElement('div');
+				para = document.createElement('p');
+				lButton = document.createElement('button');
+				mButton = document.createElement('button');
+				nButton = document.createElement('button');
+				text = document.createElement('input');
+				sendButton = document.createElement('button');
+
+				post.className = "post";
+				para.textContent = "test";
+
+				lButton.textContent = "Lovely !";
+				lButton.style.background = '#f50237';
+				setButtonListener(lButton);
+
+				nButton.textContent = "Nice";
+				nButton.style.background = '#74db07';
+				setButtonListener(nButton);
+
+				mButton.textContent = "Meh..";
+				mButton.style.background= 'gray';
+				setButtonListener(mButton);
+
+				text.setAttribute('type','text');
+				text.placeholder = "comment over here";
+				setOnClick(text);
+
+				sendButton.textContent = "->";
+				sendButton.style.background = "#00aadd";
+				sendButton.style.color = "white";
+				setButtonListener(sendButton);
+
+				post.appendChild(para);
+				post.appendChild(lButton);
+				post.appendChild(nButton);
+				post.appendChild(mButton);
+				post.appendChild(text);
+				post.appendChild(sendButton);
+				canvas.appendChild(post);
+			}*/
+
+		}
+		render();
+	</script>
+</body>
+</html>

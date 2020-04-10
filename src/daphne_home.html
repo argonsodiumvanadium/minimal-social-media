@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+ 	<link rel="stylesheet" href="home_base.css">
+	<link href="https://fonts.googleapis.com/css2?family=Oxanium&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+
+	<script type="text/javascript" src="main.js"></script>
+
+	<title>Daphne</title>
+</head>
+<body id="body" onload="
+	name = localStorage.getItem('user');
+	localStorage.setItem('user',null);
+	localStorage.setItem('registered',null);
+	sessionStorage.setItem('user',name);
+	sessionStorage.setItem('registered','not null');
+	retainData();
+	Request = {
+		job   : 'get_base_profile_data',
+		user  : user,
+	}
+	connect(Request);
+	init();
+">
+
+	<div class="">
+	<div class="topnav">
+		<button onclick="
+			localStorage.setItem('user',user);
+			localStorage.setItem('registered','not null');
+			loadAJAX('daphne_home.html');
+		"class="main">Daphne</button>
+		<button>Discover</button>
+		<button onclick="loadDOM('events')">Events</button>
+		<button onclick="loadDOM('share');">Share</button>
+		<button onclick="renderProfile(null);">You</button>
+	</div>
+	</div>
+
+	<div class="rightnav" id="rightnav">
+		<input type="text" id="search query" placeholder="search Daphne" align="middle" oninput="submitQuery(this);">
+	</div>
+
+	<!--<div class="leftnav">
+		<a onclick="loadAJAX('daphne_home.html');"><button class="head">Daphne</button></a>
+		transfer all responsability to js as base template is same
+		<button class="active" onclick="loadDOM('home')"><b>home</b></button>
+		for mobiles only 
+			<button onclick="loadDOM('messages');">Messages</button>
+		
+		<button onclick="loadDOM('find');">Find People</button><br>
+		<button onclick="loadDOM('Groups');">Groups</button><br>
+		<button onclick="loadDOM('events')">Events</button><br>
+		<button onclick="loadDOM('share');">Share</button><br>
+		<button onclick="loadDOM('profile')">You</button>
+		<button class="spl">Settings</button>
+	</div>
+	</div>-->
+	<div class="modal" id="m">
+		<div class="modal-content" id="content">
+    		<span class="close" id="close">&times;</span>
+ 		</div>
+	</div>
+
+	<div class="canvas" id="canvas">
+	</div>
+</body>
+</html>

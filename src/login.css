@@ -1,0 +1,130 @@
+body {
+ 	/*background-image: url('homepage.jpg');*/
+ 	background-color: white;
+	background-position: center;
+ 	background-clip: border-box;
+ 	background-attachment: fixed;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+}
+
+/* Style the topnav links */
+.topnav button {
+	  display: block;
+  margin:auto;
+  margin-bottom: 5vw;
+	background-color: transparent;
+	border-color: transparent;
+	font-family: 'Montserrat Alternates', monospace;
+	color: #000000;
+	padding: 1vw;
+	padding-bottom: 1vw;
+	font-size: 4vw;
+	text-align: center;
+}
+
+/* Change color on hover */
+.topnav button:hover {
+  color: rgb(200,200,200);
+}
+
+.query {
+	/*background-color: #34c1c9; */
+	display: block;
+	margin:auto;
+	background-image: linear-gradient(#f45c43,#eb3349);
+	border: 0.2vw;
+	border-bottom-style: solid;
+	border-bottom-color: #ffffff;
+	font-size: 1.5vw;
+	max-width: 40%;
+
+	color: black;
+	font-size: 1.5vw;
+	padding: 3vw;
+	padding-right: 0vw;
+	padding-left: 0vw;
+	text-align: center;
+	font-family: 'Montserrat Alternates',monospace;
+	align-content: center;
+}
+
+.query h1 {
+	color: white;
+}
+
+.column {
+  background-color: transparent;
+  float: left;
+  padding: 5px;
+  padding-right: 0px
+  padding-bottom: 10vw; 
+  width: 50%;
+}
+
+.column.right {
+	/*background-image: url('nyan.gif');*/
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-size: 30% 30%;
+	background-position: bottom left;
+
+}
+
+.column.left {
+	padding: 5vw;
+	padding-right: 0vw;
+	padding-top: 0vw;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.query input {
+	border-color: transparent;
+
+	background-color: transparent;
+	padding-right: 0vw;
+	padding-left: 0vw;
+	border-bottom-color: #ffffff;
+	color: #eeeeee;
+ 	font-family: 'Quicksand', sans-serif;
+	margin: 1vw;
+	width: 50%;
+
+	font-size: 1.5vw;
+
+}
+
+.query button {
+	font-size: 1.5vw;
+	border-color: rgba(0,0,0,0);
+	background-color: #ffffff;
+	width: 50%;
+	color: #000000;
+	font-family: 'Montserrat Alternates', monospace;
+	margin: 2vw;
+	margin-right: 0vw;
+}
+
+.query button:hover {
+	background-color: #ffffff
+}
+
+.query p {
+	color:#ffffff;
+}
