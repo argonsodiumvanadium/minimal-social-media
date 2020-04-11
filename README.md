@@ -8,4 +8,4 @@ The reason I am putting this social media in public is for reference of how to :
 - and the very basic JSON manipulation<br>
 And when you open the website up no posts will be seen that is due to the fact that I have ommited that part from the code solely because that part of the code is one of the most integral and hard and I want to work on it myself
 <br>
-now I thought at long last my goal will be complete but it was not as I still feel the lack of adequate to make the efficient product mark had made so ... yes this is gonna take some time and practice
+now I thought at long last my goal will be complete but it was not as I still feel the lack of adequate knowledge to make the efficient product mark had made so ... yes this is gonna take some time and practice
